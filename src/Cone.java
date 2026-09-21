@@ -11,7 +11,7 @@ public class Cone extends Shape {
     // Calculate Surface Area
     @Override
     protected double surface_area() {
-        return Math.PI * radius * radius + Math.PI * radius * Math.sqrt(radius * radius + height * height);
+        return (Math.PI * radius * radius) + (Math.PI * radius * Math.sqrt(radius * radius + height * height));
     }
 
     // Calculate Volume
@@ -23,6 +23,6 @@ public class Cone extends Shape {
     // Print Surface Area and Volume
     @Override
     public String toString() {
-        return String.format("Surface Area: %.2f, Volume: %.2f", surface_area(), volume());
+        return String.format("Cone: Surface Area: %.2f, Volume: %.2f", surface_area(), volume());
     }
 }

@@ -11,7 +11,7 @@ public class Cylinder extends Shape {
     // Calculate Surface Area
     @Override
     protected double surface_area() {
-        return 2 * Math.PI * radius * radius + 2 * Math.PI * radius * height;
+        return (2 * Math.PI * radius * radius) + (2 * Math.PI * radius * height);
     }
 
     // Calculate Volume
@@ -23,6 +23,6 @@ public class Cylinder extends Shape {
     // Print Surface Area and Volume
     @Override
     public String toString() {
-        return String.format("Surface Area: %.2f, Volume: %.2f", surface_area(), volume());
+        return String.format("Cylinder: Surface Area: %.2f, Volume: %.2f", surface_area(), volume());
     }
 }

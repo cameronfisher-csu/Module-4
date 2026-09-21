@@ -21,6 +21,6 @@ public class Sphere extends Shape{
     // Print Surface Area and Volume
     @Override
     public String toString() {
-        return String.format("Surface Area: %.2f, Volume: %.2f", surface_area(), volume());
+        return String.format("Sphere: Surface Area: %.2f, Volume: %.2f", surface_area(), volume());
     }
 }
