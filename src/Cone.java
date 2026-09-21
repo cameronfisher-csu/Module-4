@@ -1,9 +1,9 @@
-public class Cylinder extends Shape {
+public class Cone extends Shape {
     private double radius;
     private double height;
 
     // Public Constructor
-    public Cylinder(double radius, double height) {
+    public Cone(double radius, double height) {
         this.radius = radius;
         this.height = height;
     }
@@ -11,13 +11,13 @@ public class Cylinder extends Shape {
     // Calculate Surface Area
     @Override
     protected double surface_area() {
-        return 2 * Math.PI * radius * radius + 2 * Math.PI * radius * height;
+        return Math.PI * radius * radius + Math.PI * radius * Math.sqrt(radius * radius + height * height);
     }
 
     // Calculate Volume
     @Override
     protected double volume() {
-        return Math.PI * radius * radius * height;
+        return (1.0 / 3.0) * Math.PI * radius * radius * height;
     }
 
     // Print Surface Area and Volume
